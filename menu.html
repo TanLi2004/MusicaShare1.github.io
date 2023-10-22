@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="Pagina1.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="pagina1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navar">
+            <a href="Pagina12.html">
+                <img src="RadioShare (sinfondo).png" class="Logo">
+            </a>
+            <ul>
+                <li><ion-icon name="home"></ion-icon><a href="#">Menu</a></li>
+                <li><ion-icon name="document-text"></ion-icon><a href="#">Mision/Vision</a></li>
+                <li><ion-icon name="accessibility"></ion-icon><a href="#">Asistencia Al Cliente</a></li>
+                <li><ion-icon name="chatbubble-ellipses"></ion-icon><a href="#">Publicidad</a></li>
+            </ul>
+
+             
+        </div>
+        <div class="login-form">
+            <h1>Iniciar sesión</h1>
+            <form action="#" method="POST" id="login-form">
+                <label for="username" class="with-icon">
+                    <ion-icon name="person-circle-sharp" class="icon"></ion-icon>
+                    Nombre de usuario:
+                </label>
+                <input type="text" id="username" name="username" required>
+                <label for="password" class="with-icon">
+                    <ion-icon name="lock-open" class="icon"></ion-icon>
+                    Contraseña:
+                </label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" id="login-button">Iniciar sesión</button>
+            </form>
+            
+            <p>¿No tienes una cuenta? <a href="registrar.html">Regístrate</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginForm = document.getElementById("login-form");
+            const usernameInput = document.getElementById("username");
+            const passwordInput = document.getElementById("password");
+
+            loginForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const username = usernameInput.value;
+                const password = passwordInput.value;
+
+                const users = JSON.parse(localStorage.getItem("users")) || [];
+
+                const user = users.find(user => user.username === username);
+
+                if (user) {
+                    if (user.password === password) {
+                        alert('Bienvenido ' + user.username);
+                        window.location.href = '1234.html';
+                    } else {
+                        alert('Contraseña incorrecta. Por favor, inténtalo de nuevo.');
+                        passwordInput.value = "";
+                    }
+                } else {
+                    alert('Nombre de usuario incorrecto. Por favor, inténtalo de nuevo.');
+                    usernameInput.value = "";
+                    passwordInput.value = "";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

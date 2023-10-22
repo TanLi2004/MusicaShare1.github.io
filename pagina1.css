@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.container{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(el\ fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.navar {
+    
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition:  0.3s, color 0.3s; /* 添加过渡效果 */
+
+}
+
+.Logo{
+
+     width: 150px;
+     cursor: pointer;
+     height: 100px;
+    
+    }
+
+
+.navar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    
+    
+}
+
+.navar ul li ion-icon {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.navar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+    font-size: 25px;
+    transition: color 0.3s;
+    transition: transform 0.3s; /* 添加放大效果 */
+
+}
+
+.navar:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: #040F2A; /* 文本颜色改变 */
+}
+
+.navar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 25px;
+    transition: color 0.3s; /* 添加文本颜色过渡 */
+    transition: transform 0.3s; /* 添加放大效果 */
+}
+
+.navar ul li:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+.navar ul li:hover a {
+    transform: scale(1.1); /* 文本放大 */
+}
+
+/* 鼠标悬停时的效果，针对每个菜单项的链接 */
+.navar ul li:nth-child(1):hover a {
+    color: #d8c34d;
+}
+
+.navar ul li:nth-child(2):hover a {
+    color: #d8c34d;
+}
+
+.navar ul li:nth-child(3):hover a {
+    color: #d8c34d;
+}
+
+.navar ul li:nth-child(4):hover a {
+    color: #d8c34d;
+}
+
+
+.Iniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-top: 30px;
+}
+
+.Boton {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    border-radius: 1.1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+.Boton:hover {
+    background: rgba(0, 0, 0, 0.3); /* 悬停时改变背景颜色 */
+    transform: scale(1.1); /* 悬停时放大按钮 */
+}
+
+/* 标题样式 */
+.Bienvenido {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bienvenido h1 {
+    max-width: 1500px;
+    font-size: 10em; /* 调整字体大小，根据需要调整值 */
+    color: #ffffff;
+    margin-top: 100px;
+    font-family: "Your Font", sans-serif; /* 替换 "Your Font" 为所选字体 */
+}
+
+/* 入场动画效果 */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 副标题样式 */
+.Presentar {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Presentar h2 {
+    font-size: 2.5em; /* 调整字体大小，根据需要调整值 */
+    color: #ffffff;
+    font-family: "Your Font", sans-serif; /* 替换 "Your Font" 为所选字体 */
+}
+
+
+  
