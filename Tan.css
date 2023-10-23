@@ -5,14 +5,15 @@
 
 }
 
-.container{
-
+.container {
     height: 100vh;
     width: 100%;
     background-image: url(el\ fondo.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
+    background-attachment: fixed;
+    min-height: 200vh;
 }
 
 .navar {
@@ -26,7 +27,8 @@
     background: rgba(0, 0, 0, 0.3);
     color: white;
     transition:  0.3s, color 0.3s; /* 添加过渡效果 */
-
+    position: relative; /* 添加相对定位 */
+    z-index: 2;
 }
 
 .Logo{
@@ -179,5 +181,50 @@
     font-family: "Your Font", sans-serif; /* 替换 "Your Font" 为所选字体 */
 }
 
+/* 在小屏幕上进行样式调整 */
+@media (max-width: 480px) {
+    .container {
+        height: 100vh;
+        background-size: cover; /* 保持背景图片的cover模式 */
+        background-attachment: fixed;
+    }
 
-  
+    .navar {
+        flex-direction: column; /* 垂直排列菜单项 */
+        padding: 10px;
+        text-align: center; /* 文本居中对齐 */
+    }
+
+    .navar ul {
+        flex-direction: column; /* 垂直排列菜单项 */
+        margin: 10px 0; /* 调整垂直间距 */
+    }
+
+    .navar ul li {
+        margin: 0;
+    }
+
+    .navar ul li a {
+        font-size: 16px; /* 调整菜单项的字体大小 */
+    }
+
+    .Logo {
+        width: 80px; /* 调整Logo的宽度 */
+    }
+
+    .Presentar h2 {
+        font-size: 7vw; /* 调整标题字体大小 */
+    }
+    
+    .Bienvenido h1 {
+        font-size: 15vw; /* 调整标题字体大小 */
+    }
+    .content {
+        min-height: 100vh; /* 设置内容区域的最小高度为视口高度 */
+      }
+}
+
+
+
+
+

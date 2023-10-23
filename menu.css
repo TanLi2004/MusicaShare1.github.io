@@ -106,3 +106,34 @@ a:hover {
 .p{
     margin-top: 40px;
 }
+/* 根据屏幕大小调整样式 */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%; /* 调整表单宽度以接近屏幕宽度 */
+    }
+
+    h1 {
+        font-size: 36px; /* 调整标题字体大小 */
+    }
+
+    label {
+        font-size: 16px; /* 调整标签字体大小 */
+    }
+
+    .icon {
+        font-size: 16px; /* 调整图标大小 */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 16px; /* 调整输入框字体大小 */
+    }
+
+    button {
+        font-size: 18px; /* 调整按钮字体大小 */
+    }
+
+    .p {
+        margin-top: 10px; /* 调整段落上边距 */
+    }
+}
