@@ -35,3 +35,11 @@ p, li {
     width: 90%;
 }
 
+@media (max-width: 480px) {
+    .container {
+        height: 100vh;
+        background-size: cover; /* 保持背景图片的cover模式 */
+        background-attachment: fixed;
+        min-height: 200vh;
+    }
+}
