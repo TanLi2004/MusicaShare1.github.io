@@ -1,0 +1,28 @@
+/* 添加联系人样式 */
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contact {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px; /* 调整联系人卡片的宽度 */
+}
+
+.contact:hover {
+    transform: scale(1.05);
+}
+
+.contact img {
+    max-width: 100%;
+    max-height: 100%;
+}

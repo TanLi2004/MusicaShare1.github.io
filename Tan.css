@@ -6,13 +6,13 @@
 }
 
 .container {
-    height: 100vh;
     width: 100%;
     background-image: url(el\ fondo.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
     background-attachment: fixed;
+    height: 100%;
 }
 
 .navar {
@@ -179,6 +179,21 @@
     color: #ffffff;
     font-family: "Your Font", sans-serif; /* 替换 "Your Font" 为所选字体 */
 }
+
+.foorter{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    min-height: 20px; 
+    height: -142px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 
 /* 在小屏幕上进行样式调整 */
 @media (max-width: 480px) {

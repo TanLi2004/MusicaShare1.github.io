@@ -1,0 +1,58 @@
+/* 响应式设计 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative; /* 使Logo相对于容器定位 */
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    text-align: left; /* 左对齐 */
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* 调整Logo的大小 */
+    position: absolute; /* 使用绝对定位 */
+    top: 10px; /* 距离顶部的距离 */
+    left: 10px; /* 距离左侧的距离 */
+}
+
+main {
+    padding: 20px;
+}
+
+.music-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.review {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .music-card, .review {
+        margin: 5px;
+    }
+}
+
