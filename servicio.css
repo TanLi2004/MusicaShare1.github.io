@@ -1,0 +1,84 @@
+
+.texto1 h1, .texto2 h1 {
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 24px;
+    color: #333; /* 文字颜色 */
+/* 添加至Tan.css和servicio.css或在同一CSS文件中 */
+}
+
+/* 字体样式 */
+.texto1 h1, .texto2 h1 {
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 50px; /* 调整字体大小 */
+    color: #333; /* 文字颜色 */
+}
+
+.texto1 p, .texto2 p {
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 30px; /* 调整字体大小 */
+    color: #666; /* 文字颜色 */
+}
+
+/* 过渡动画效果 */
+.texto1, .texto2 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto1:hover, .texto2:hover {
+    transform: scale(1.05);
+}
+
+/* 布局 */
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* 占满整个宽度 */
+}
+
+.texto1, .texto2 {
+    width: 85%; /* 占满整个宽度 */
+    margin: 20px 0; /* 调整文本块之间的间距 */
+    background: rgba(255, 255, 255, 0.8); /* 背景颜色，包括透明度 */
+    backdrop-filter: blur(10px); /* 添加毛玻璃效果，可调整模糊半径 */
+    padding: 20px; /* 调整内边距 */
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .texto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto1,
+    .texto2 {
+        flex: 1;
+        margin: 1em 0;
+    }
+
+    /* 调整字体大小 */
+    .texto1 h1,
+    .texto2 h1 {
+        font-size: 1.2em;
+    }
+
+    .texto1 p,
+    .texto2 p {
+        font-size: 0.9em; /* 相对较小的段落字体 */
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 让元素在垂直方向上居中 */
+        text-align: center; /* 让文本内容居中 */
+    }
+}
+
+
+
+
+
+

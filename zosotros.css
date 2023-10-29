@@ -1,6 +1,10 @@
 
 /* 页面整体样式 */
 
+.container {
+    min-height: 123vh; /* 默认情况下的最小高度 */
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -35,13 +39,6 @@ h3 {
     color: #007BFF;
 }
 
-
-
-@media (max-width: 480px) {
-    .Mision, .Vision, .Valores {
-        margin: 20px;
-    }
-}
 
 /* 更新字体大小 */
 .content h3 {
@@ -80,5 +77,70 @@ h3 {
     width: 80%;
     margin: 20px;
 }
+
+@media (max-width: 480px) {
+    .container {
+        min-height: 170vh; /* 在小屏幕上保持min-height: 123vh */
+    
+}
+
+/* 字体样式 */
+.texto1 h1, .texto2 h1 {
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 28px; /* 调整字体大小 */
+    color: #333; /* 文字颜色 */
+}
+
+.texto1 p, .texto2 p {
+    font-family: 'Your Desired Font', sans-serif;
+    font-size: 18px; /* 调整字体大小 */
+    color: #666; /* 文字颜色 */
+}
+
+/* 过渡动画效果 */
+.texto1, .texto2 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto1:hover, .texto2:hover {
+    transform: scale(1.05);
+}
+
+/* 布局 */
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* 占满整个宽度 */
+    padding: 20px; /* 可以调整内边距 */
+}
+
+.texto1, .texto2 {
+    width: 100%; /* 占满整个宽度 */
+    margin: 20px 0; /* 调整文本块之间的间距 */
+    background: rgba(255, 255, 255, 0.8); /* 背景颜色，包括透明度 */
+    backdrop-filter: blur(10px); /* 添加毛玻璃效果，可调整模糊半径 */
+    padding: 20px; /* 调整内边距 */
+    border-radius: 15px; /* 添加圆角，可调整圆角半径 */
+}
+
+/* 图片自适应宽度 */
+img {
+    max-width: 100%; /* 图片自适应屏幕宽度 */
+    height: auto; /* 图片高度自动调整 */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

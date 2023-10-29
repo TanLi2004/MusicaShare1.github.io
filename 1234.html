@@ -1,52 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música Recomendada</title>
-    <link rel="stylesheet" href="1234.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Música</title>
+  <link rel="stylesheet" href="1234.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <a href="Pagina12.html">
-                <img src="RadioShare (sinfondo).png" class="logo">
-            </a>
+  <header>
+    <div id="branding">
+      <img src="RadioShare (sinfondo).png" alt="RadioShare Logo" class="logo">
+      <h1><span class="highlight">Plataforma</span> de Música</h1>
+    </div>
+    <h1>Plataforma de Música</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li onclick="filterMusic('general')">General</li>
+      <li onclick="filterMusic('Alternative-rock')">Alternative Rock</li>
+      <li onclick="filterMusic('rap')">Rap</li>
+      <li onclick="filterMusic('hip-hop')">Hip-Hop</li>
+      <li onclick="filterMusic('Rock')">Rock</li>
+      <li onclick="filterMusic('Grunge')">Grunge</li>
+      <li onclick="filterMusic('Música-Colombiana')">Música Colombiana</li>
+      <li onclick="filterMusic('musica-china')">Música China</li>
+      <li onclick="filterMusic('pop')">Pop</li>
+      <li><a href="ranking.html">Ranking</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <audio id="audio-player" autoplay></audio>
+    <div class="music-category" id="general">
+      <div class="song-card" onclick="playMusic('song1.mp3', 'cover1.jpg', 'Song 1', 'Artist 1')">
+        <img src="cover1.jpg" alt="Cover 1">
+        <p>Song 1 - Artist 1</p>
+      </div>
+      <div class="song-card" onclick="playMusic('song2.mp3', 'cover2.jpg', 'Song 2', 'Artist 2')">
+        <img src="cover2.jpg" alt="Cover 2">
+        <p>Song 2 - Artist 2</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="Alternative-rock" style="display: none;">
+      <div class="song-card" onclick="playMusic('song3.mp3', 'cover3.jpg', 'Song 3', 'Artist 3')">
+        <img src="cover3.jpg" alt="Cover 3">
+        <p>Song 3 - Artist 3</p>
+      </div>
+      <div class="song-card" onclick="playMusic('song4.mp3', 'cover4.jpg', 'Song 4', 'Artist 4')">
+        <img src="cover4.jpg" alt="Cover 4">
+        <p>Song 4 - Artist 4</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="rap" style="display: none;">
+      <div class="song-card" onclick="playMusic('song5.mp3', 'cover5.jpg', 'Song 5', 'Artist 5')">
+        <img src="cover5.jpg" alt="Cover 5">
+        <p>Song 5 - Artist 5</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="hip-hop" style="display: none;">
+      <div class="song-card" onclick="playMusic('song6.mp3', 'cover6.jpg', 'Song 6', 'Artist 6')">
+        <img src="cover6.jpg" alt="Cover 6">
+        <p>Song 6 - Artist 6</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="Rock" style="display: none;">
+      <div class="song-card" onclick="playMusic('song7.mp3', 'cover7.jpg', 'Song 7', 'Artist 7')">
+        <img src="cover7.jpg" alt="Cover 7">
+        <p>Song 7 - Artist 7</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="Grunge" style="display: none;">
+      <div class="song-card" onclick="playMusic('song8.mp3', 'cover8.jpg', 'Song 8', 'Artist 8')">
+        <img src="cover8.jpg" alt="Cover 8">
+        <p>Song 8 - Artist 8</p>
+      </div>
+    </div>
+  
+    <div class="music-category" id="Música-Colombiana" style="display: none;">
+      <div class="song-card" onclick="playMusic('song9.mp3', 'cover9.jpg', 'Song 9', 'Artist 9')">
+        <img src="cover9.jpg" alt="Cover 9">
+        <p>Song 9 - Artist 9</p>
+      </div>
+    </div>
+    
+<div class="music-category" id="musica-china" style="display: none;">
+  <div class="song-card" onclick="playMusic('musica/daoxian.mp3', 'musica/daoxian.jpg', '稻香', '周杰伦')">
+    <div class="cover-container">
+      <img src="musica/daoxian.jpg" alt="Cover 10" class="cover">
+    </div>
+    <div class="song-info">
+      <h3 class="song-title">稻香</h3>
+      <p class="artist-name">周杰伦</p>
+    </div>
+  </div>  
+</div>
+            
+    <div class="music-category" id="pop" style="display: none;">
+      <div class="song-card" onclick="playMusic('song11.mp3', 'cover11.jpg', 'Song 11', 'Artist 11')">
+        <img src="cover11.jpg" alt="Cover 11">
+        <p>Song 11 - Artist 11</p>
+      </div>
+    </div>
+  </main>
+  
+
+  <footer>
+    <div id="player">
+      <div class="music-player">
+        <img src="default-album-cover.jpg" alt="Album Cover" class="album-cover">
+        <div class="playback-controls">
+          <button class="player-btn" id="prev-btn">&#9664;</button>
+          <button class="player-btn" id="play-pause-btn">&#9654;</button>
+          <button class="player-btn" id="next-btn">&#9654;&#9654;</button>
+
         </div>
-        <header>
-            <h1>Música Recomendada</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Biblioteca de Música</a></li>
-                <li><a href="#">Cuenta Personal</a></li>
-            </ul>
-        </nav>
-    <main>
-        <section id="featured-music">
-            <h2>Música Recomendada</h2>
-            <div class="music-card">
-                <img src="song1.jpg" alt="Canción 1">
-                <h3>Canción 1</h3>
-                <p>Artista: Artista 1</p>
-                <p>Calificación: ★★★★☆</p>
-                <button>Escuchar</button>
-            </div>
-            <!-- Puede agregar más tarjetas de música aquí -->
-        </section>
-        <section id="user-reviews">
-            <h2>Comentarios de Usuarios</h2>
-            <div class="review">
-                <h3>Usuario 1</h3>
-                <p>¡Esta es una canción genial!</p>
-            </div>
-            <!-- Puede agregar más comentarios de usuarios aquí -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Música Recomendada</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="now-playing" id="now-playing">Select a song to play...</div>
+        <input type="range" id="progress-bar" value="0">
+        </audio>
+      </div>
+    </div>
+    <iframe id="spotify-player" src="" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
+  </footer>
+  
+
+  <script src="1234.js"></script>
+
+  <script>
+    function playMusic(audioSource, imageSource, songTitle, artistName) {
+      var audio = document.querySelector('audio');
+      var albumCover = document.querySelector('.album-cover');
+      var nowPlaying = document.querySelector('#now-playing');
+  
+      audio.src = audioSource;
+      albumCover.src = imageSource;
+      nowPlaying.textContent = songTitle + ' - ' + artistName;
+  
+      audio.play();
+    }
+  </script>
+  
 </body>
 </html>
+
+
