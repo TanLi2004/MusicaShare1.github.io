@@ -9,6 +9,7 @@
     justify-content: center;
     list-style: none;
     padding: 0;
+
 }
 
 .contact {
@@ -29,6 +30,11 @@
 .contact img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.contact img {
+    width: 300px;
+    height: 300px;
 }
 
 @media (max-width: 480px) {

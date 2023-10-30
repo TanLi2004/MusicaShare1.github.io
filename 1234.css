@@ -170,18 +170,22 @@ iframe {
 }
 
 .song-card {
+  width: 200px; /* 设置卡片的宽度 */
+  height: 150px; /* 设置卡片的高度 */
+  background-color: #f0f0f0; /* 设置卡片的背景颜色 */
+  border: 1px solid #ccc; /* 设置卡片的边框 */
+  cursor: pointer; /* 添加鼠标悬停效果 */
   display: flex;
   align-items: center;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 10px;
   margin: 10px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .song-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: none; /* 鼠标悬停时取消位移效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
 }
 
 .cover-container {
@@ -203,6 +207,7 @@ iframe {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none; /* 取消歌名的下划线 */
 }
 
 .artist-name {
@@ -210,6 +215,7 @@ iframe {
   font-size: 14px;
   color: #555;
 }
+
 
 
 
