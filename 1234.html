@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plataforma de Música</title>
   <link rel="stylesheet" href="1234.css">
+  <link rel="icon" href="RadioShare(confondo).jpeg">
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
       <img src="RadioShare (sinfondo).png" alt="RadioShare Logo" class="logo">
       <h1><span class="highlight">Plataforma</span> de Música</h1>
     </div>
-    <h1>Plataforma de Música</h1>
+    <h1>MusicShare</h1>
   </header>
 
   <nav>
@@ -33,39 +34,123 @@
   <main>
     <audio id="audio-player" autoplay></audio>
     <div class="music-category" id="general">
-      <div class="song-card" onclick="playMusic('song1.mp3', 'cover1.jpg', 'Song 1', 'Artist 1')">
-        <img src="cover1.jpg" alt="Cover 1">
-        <p>Song 1 - Artist 1</p>
-      </div>
-      <div class="song-card" onclick="playMusic('song2.mp3', 'cover2.jpg', 'Song 2', 'Artist 2')">
-        <img src="cover2.jpg" alt="Cover 2">
-        <p>Song 2 - Artist 2</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/daoxian.mp3', 'musica/daoxian.jpg', '稻香', '周杰伦')">
+        <div class="cover-container">
+          <img src="musica/daoxian.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">稻香</h3>
+          <p class="artist-name">周杰伦</p>
+        </div>
+      </div>  
+      <div class="song-card" onclick="playMusic('musica/2002.mp3', 'musica/2002.jpg', '2002', 'Anne Marie')">
+        <div class="cover-container">
+          <img src="musica/2002.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">2002</h3>
+          <p class="artist-name">Anne Marie</p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Something Just Like This.mp3', 'musica/somethink.jpg', 'Something Just Like This', 'The Chainsmokers')">
+        <div class="cover-container">
+          <img src="musica\somethink.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Something Just Like This</h3>
+          <p class="artist-name">The Chainsmokers</p>
+        </div>
+      </div>  
+      <div class="song-card" onclick="playMusic('musica/Creep.mp3', 'musica/creep.jpg', 'Creep', 'Radiohead')">
+        <div class="cover-container">
+          <img src="musica\creep.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Creep</h3>
+          <p class="artist-name">Radiohead</p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Nirvana.mp3', 'musica/narriva.jpg', 'Smells Like Teen Spirit', 'Nirvana')">
+        <div class="cover-container">
+          <img src="musica\narriva.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Smells Like Teen Spirit</h3>
+          <p class="artist-name">Nirvana</p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Alright.mp3', 'musica/alright.jpg', 'Alright', 'Kendrick Lamar ')">
+        <div class="cover-container">
+          <img src="musica/alright.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Alright</h3>
+          <p class="artist-name">Kendrick Lamar </p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Their Nightmares .mp3', 'musica/xxxtentation.png', 'Everybody Dies In Their Nightmares', 'XXXTENTACION')">
+        <div class="cover-container">
+          <img src="musica/xxxtentation.png" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Everybody Dies In Their Nightmares</h3>
+          <p class="artist-name">XXXTENTACION</p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Hope.mp3', 'musica/xxxtentation1.jpg', 'Hope', 'XXXTENTACION')">
+        <div class="cover-container">
+          <img src="musica/xxxtentation1.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Hope</h3>
+          <p class="artist-name">XXXTENTACION</p>
+        </div>
+      </div> 
     </div>
   
     <div class="music-category" id="Alternative-rock" style="display: none;">
-      <div class="song-card" onclick="playMusic('song3.mp3', 'cover3.jpg', 'Song 3', 'Artist 3')">
-        <img src="cover3.jpg" alt="Cover 3">
-        <p>Song 3 - Artist 3</p>
-      </div>
-      <div class="song-card" onclick="playMusic('song4.mp3', 'cover4.jpg', 'Song 4', 'Artist 4')">
-        <img src="cover4.jpg" alt="Cover 4">
-        <p>Song 4 - Artist 4</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/Creep.mp3', 'musica/creep.jpg', 'Creep', 'Radiohead')">
+        <div class="cover-container">
+          <img src="musica\creep.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Creep</h3>
+          <p class="artist-name">Radiohead</p>
+        </div>
+      </div> 
     </div>
   
     <div class="music-category" id="rap" style="display: none;">
-      <div class="song-card" onclick="playMusic('song5.mp3', 'cover5.jpg', 'Song 5', 'Artist 5')">
-        <img src="cover5.jpg" alt="Cover 5">
-        <p>Song 5 - Artist 5</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/Their Nightmares .mp3', 'musica/xxxtentation.png', 'Everybody Dies In Their Nightmares', 'XXXTENTACION')">
+        <div class="cover-container">
+          <img src="musica/xxxtentation.png" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Everybody Dies In Their Nightmares</h3>
+          <p class="artist-name">XXXTENTACION</p>
+        </div>
+      </div> 
+      <div class="song-card" onclick="playMusic('musica/Hope.mp3', 'musica/xxxtentation1.png', 'Hope', 'XXXTENTACION')">
+        <div class="cover-container">
+          <img src="musica/xxxtentation1.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Hope</h3>
+          <p class="artist-name">XXXTENTACION</p>
+        </div>
+      </div> 
     </div>
   
     <div class="music-category" id="hip-hop" style="display: none;">
-      <div class="song-card" onclick="playMusic('song6.mp3', 'cover6.jpg', 'Song 6', 'Artist 6')">
-        <img src="cover6.jpg" alt="Cover 6">
-        <p>Song 6 - Artist 6</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/Alright.mp3', 'musica/alright.jpg', 'Alright', 'Kendrick Lamar ')">
+        <div class="cover-container">
+          <img src="musica/alright.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Alright</h3>
+          <p class="artist-name">Kendrick Lamar</p>
+        </div>
+      </div> 
     </div>
   
     <div class="music-category" id="Rock" style="display: none;">
@@ -76,10 +161,15 @@
     </div>
   
     <div class="music-category" id="Grunge" style="display: none;">
-      <div class="song-card" onclick="playMusic('song8.mp3', 'cover8.jpg', 'Song 8', 'Artist 8')">
-        <img src="cover8.jpg" alt="Cover 8">
-        <p>Song 8 - Artist 8</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/Nirvana.mp3', 'musica/narriva.jpg', 'Smells Like Teen Spirit', 'Nirvana')">
+        <div class="cover-container">
+          <img src="musica\narriva.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Smells Like Teen Spirit</h3>
+          <p class="artist-name">Nirvana</p>
+        </div>
+      </div> 
     </div>
   
     <div class="music-category" id="Música-Colombiana" style="display: none;">
@@ -102,33 +192,44 @@
 </div>
             
     <div class="music-category" id="pop" style="display: none;">
-      <div class="song-card" onclick="playMusic('song11.mp3', 'cover11.jpg', 'Song 11', 'Artist 11')">
-        <img src="cover11.jpg" alt="Cover 11">
-        <p>Song 11 - Artist 11</p>
+      <div class="song-card" onclick="playMusic('musica/2002.mp3', 'musica/2002.jpg', '2002', 'Anne Marie')">
+        <div class="cover-container">
+          <img src="musica/2002.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">2002</h3>
+          <p class="artist-name">Anne Marie</p>
+        </div>
       </div>
+      <div class="song-card" onclick="playMusic('musica/Something Just Like This.mp3', 'musica/somethink.jpg', 'Something Just Like This', 'The Chainsmokers')">
+        <div class="cover-container">
+          <img src="musica\somethink.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Something Just Like This</h3>
+          <p class="artist-name">The Chainsmokers</p>
+        </div>
+      </div>  
     </div>
   </main>
   
 
   <footer>
     <div id="player">
-      <div class="music-player">
-        <img src="default-album-cover.jpg" alt="Album Cover" class="album-cover">
-        <div class="playback-controls">
-          <button class="player-btn" id="prev-btn">&#9664;</button>
-          <button class="player-btn" id="play-pause-btn">&#9654;</button>
-          <button class="player-btn" id="next-btn">&#9654;&#9654;</button>
-
+        <div class="music-player">
+            <img src="default-album-cover.jpg" alt="Album Cover" class="album-cover">
+            <div class="playback-controls">
+                <button class="player-btn" id="prev-btn">&#9664;</button>
+                <button class="player-btn" id="play-pause-btn">&#9654;</button>
+                <button class="player-btn" id="next-btn">&#9654;&#9654;</button>
+            </div>
+            <div class="now-playing" id="now-playing">Select a song to play...</div>
+            <input type="range" id="progress-bar" value="0">
+            <audio id="audio-player"></audio>
         </div>
-        <div class="now-playing" id="now-playing">Select a song to play...</div>
-        <input type="range" id="progress-bar" value="0">
-        </audio>
-      </div>
     </div>
     <iframe id="spotify-player" src="" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  </div>
-  </footer>
-  
+</footer>
 
   <script src="1234.js"></script>
 
