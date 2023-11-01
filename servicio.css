@@ -9,13 +9,13 @@
 /* 字体样式 */
 .texto1 h1, .texto2 h1 {
     font-family: 'Your Desired Font', sans-serif;
-    font-size: 50px; /* 调整字体大小 */
+    font-size: 35px; /* 调整字体大小 */
     color: #333; /* 文字颜色 */
 }
 
 .texto1 p, .texto2 p {
     font-family: 'Your Desired Font', sans-serif;
-    font-size: 30px; /* 调整字体大小 */
+    font-size: 25px; /* 调整字体大小 */
     color: #666; /* 文字颜色 */
 }
 

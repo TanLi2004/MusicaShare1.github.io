@@ -216,6 +216,66 @@ iframe {
   color: #555;
 }
 
+.main {
+  max-height: 730px; /* 设置最大高度 */
+  overflow-y: auto; /* 启用垂直滚动条 */
+}
+
+.song-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cover {
+  max-width: 100px;
+}
+
+.song-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rating {
+  font-size: 24px;
+  color: #ffd700; /* 默认颜色为黄色 */
+  position: relative;
+  display: inline-block;
+}
+
+.rating:before {
+  content: '★';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #eede03f5; /* 未点亮的星星颜色为灰色 */
+}
+
+.rating[data-rating="1"]:before {
+  content: '★';
+}
+
+.rating[data-rating="2"]:before {
+  content: '★★';
+}
+
+.rating[data-rating="3"]:before {
+  content: '★★★';
+}
+
+.rating[data-rating="4"]:before {
+  content: '★★★★';
+}
+
+.rating[data-rating="5"]:before {
+  content: '★★★★★';
+}
+
+
 
 
 

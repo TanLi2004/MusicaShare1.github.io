@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8b5643978b.js" crossorigin="anonymous"></script>
   <title>Plataforma de Música</title>
   <link rel="stylesheet" href="1234.css">
   <link rel="icon" href="RadioShare(confondo).jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <header>
@@ -24,7 +26,7 @@
       <li onclick="filterMusic('hip-hop')">Hip-Hop</li>
       <li onclick="filterMusic('Rock')">Rock</li>
       <li onclick="filterMusic('Grunge')">Grunge</li>
-      <li onclick="filterMusic('Música-Colombiana')">Música Colombiana</li>
+      <li onclick="filterMusic('Reggaeton')">Reggaeton</li>
       <li onclick="filterMusic('musica-china')">Música China</li>
       <li onclick="filterMusic('pop')">Pop</li>
       <li><a href="ranking.html">Ranking</a></li>
@@ -32,6 +34,7 @@
   </nav>
 
   <main>
+    <div class="music-container" id="music-container">
     <audio id="audio-player" autoplay></audio>
     <div class="music-category" id="general">
       <div class="song-card" onclick="playMusic('musica/daoxian.mp3', 'musica/daoxian.jpg', '稻香', '周杰伦')">
@@ -41,7 +44,9 @@
         <div class="song-info">
           <h3 class="song-title">稻香</h3>
           <p class="artist-name">周杰伦</p>
+          <div class="rating" data-rating="4"></div>
         </div>
+        
       </div>  
       <div class="song-card" onclick="playMusic('musica/2002.mp3', 'musica/2002.jpg', '2002', 'Anne Marie')">
         <div class="cover-container">
@@ -50,6 +55,8 @@
         <div class="song-info">
           <h3 class="song-title">2002</h3>
           <p class="artist-name">Anne Marie</p>
+          <div class="rating" data-rating="4"></div>
+
         </div>
       </div> 
       <div class="song-card" onclick="playMusic('musica/Something Just Like This.mp3', 'musica/somethink.jpg', 'Something Just Like This', 'The Chainsmokers')">
@@ -59,7 +66,9 @@
         <div class="song-info">
           <h3 class="song-title">Something Just Like This</h3>
           <p class="artist-name">The Chainsmokers</p>
+          <div class="rating" data-rating="4"></div>
         </div>
+
       </div>  
       <div class="song-card" onclick="playMusic('musica/Creep.mp3', 'musica/creep.jpg', 'Creep', 'Radiohead')">
         <div class="cover-container">
@@ -68,6 +77,8 @@
         <div class="song-info">
           <h3 class="song-title">Creep</h3>
           <p class="artist-name">Radiohead</p>
+          <div class="rating" data-rating="4"></div>
+
         </div>
       </div> 
       <div class="song-card" onclick="playMusic('musica/Nirvana.mp3', 'musica/narriva.jpg', 'Smells Like Teen Spirit', 'Nirvana')">
@@ -77,7 +88,9 @@
         <div class="song-info">
           <h3 class="song-title">Smells Like Teen Spirit</h3>
           <p class="artist-name">Nirvana</p>
+          <div class="rating" data-rating="5"></div>
         </div>
+
       </div> 
       <div class="song-card" onclick="playMusic('musica/Alright.mp3', 'musica/alright.jpg', 'Alright', 'Kendrick Lamar ')">
         <div class="cover-container">
@@ -86,8 +99,10 @@
         <div class="song-info">
           <h3 class="song-title">Alright</h3>
           <p class="artist-name">Kendrick Lamar </p>
+          <div class="rating" data-rating="3"></div>
         </div>
       </div> 
+
       <div class="song-card" onclick="playMusic('musica/Their Nightmares .mp3', 'musica/xxxtentation.png', 'Everybody Dies In Their Nightmares', 'XXXTENTACION')">
         <div class="cover-container">
           <img src="musica/xxxtentation.png" alt="Cover 10" class="cover">
@@ -95,7 +110,12 @@
         <div class="song-info">
           <h3 class="song-title">Everybody Dies In Their Nightmares</h3>
           <p class="artist-name">XXXTENTACION</p>
+          <div class="rating" data-rating="5"></div>
+
         </div>
+
+
+ 
       </div> 
       <div class="song-card" onclick="playMusic('musica/Hope.mp3', 'musica/xxxtentation1.jpg', 'Hope', 'XXXTENTACION')">
         <div class="cover-container">
@@ -104,9 +124,103 @@
         <div class="song-info">
           <h3 class="song-title">Hope</h3>
           <p class="artist-name">XXXTENTACION</p>
+          <div class="rating" data-rating="4"></div>
         </div>
       </div> 
+
+
+
+      <div class="song-card" onclick="playMusic('musica/WHERE SHE GOES.mp3', 'musica/bad.jpg', 'WHERE SHE GOES', 'Bad Bunny')">
+        <div class="cover-container">
+          <img src="musica/bad.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">WHERE SHE GOES</h3>
+          <p class="artist-name">Bad Bunny</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/Vol57.mp3', 'musica/MILO.jpg', 'Bzrp Music Sessions', 'Milo J')">
+        <div class="cover-container">
+          <img src="musica/MILO.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Bzrp Music Sessions</h3>
+          <p class="artist-name">Milo J</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/MyLife.mp3', 'musica/Bon_.jpg', 'Bon Jovi', 'Its My Life')">
+        <div class="cover-container">
+          <img src="musica\Bon_.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">It's My Life</h3>
+          <p class="artist-name">Bon Jovi</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/MONACO.mp3', 'musica/bad 2.jpg', 'MONACO', 'Bad Bunny')">
+        <div class="cover-container">
+          <img src="musica/bad 2.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">MONACO</h3>
+          <p class="artist-name">Bad Bunny</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/LIGHT YEARS AWAY.mp3', 'musica/Gem.jpg', '光年之外 LIGHT YEARS AWAY', 'G.E.M.')">
+        <div class="cover-container">
+          <img src="musica/Gem.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">光年之外 LIGHT YEARS AWAY</h3>
+          <p class="artist-name">鄧紫棋</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/StressedOut.mp3', 'musica/StressedOut.jpg', 'Stressed Out', 'The Chainsmokers')">
+        <div class="cover-container">
+          <img src="musica/StressedOut.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Stressed Out</h3>
+          <p class="artist-name">twenty one pilots</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div>  
+
+      <div class="song-card" onclick="playMusic('musica/Old Town Road.mp3', 'musica/OldTownRoad.jpg', 'Old Town Road', 'Lil Nas X')">
+        <div class="cover-container">
+          <img src="musica/OldTownRoad.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Old Town Road</h3>
+          <p class="artist-name">Lil Nas X</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div>
+
+      <div class="song-card" onclick="playMusic('musica/Sessions.mp3', 'musica/Sessions.jpg', 'BZRP Music Sessions #53', 'SHAKIRA')">
+        <div class="cover-container">
+          <img src="musica\Sessions.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">BZRP Music Sessions #53</h3>
+          <p class="artist-name">SHAKIRA</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
+
+
     </div>
+    
   
     <div class="music-category" id="Alternative-rock" style="display: none;">
       <div class="song-card" onclick="playMusic('musica/Creep.mp3', 'musica/creep.jpg', 'Creep', 'Radiohead')">
@@ -116,9 +230,17 @@
         <div class="song-info">
           <h3 class="song-title">Creep</h3>
           <p class="artist-name">Radiohead</p>
+          <div class="rating" data-rating="4"></div>
         </div>
       </div> 
     </div>
+
+
+
+
+
+
+
   
     <div class="music-category" id="rap" style="display: none;">
       <div class="song-card" onclick="playMusic('musica/Their Nightmares .mp3', 'musica/xxxtentation.png', 'Everybody Dies In Their Nightmares', 'XXXTENTACION')">
@@ -128,6 +250,7 @@
         <div class="song-info">
           <h3 class="song-title">Everybody Dies In Their Nightmares</h3>
           <p class="artist-name">XXXTENTACION</p>
+          <div class="rating" data-rating="5"></div>
         </div>
       </div> 
       <div class="song-card" onclick="playMusic('musica/Hope.mp3', 'musica/xxxtentation1.png', 'Hope', 'XXXTENTACION')">
@@ -137,9 +260,16 @@
         <div class="song-info">
           <h3 class="song-title">Hope</h3>
           <p class="artist-name">XXXTENTACION</p>
+          <div class="rating" data-rating="4"></div>
         </div>
       </div> 
     </div>
+
+
+
+
+
+
   
     <div class="music-category" id="hip-hop" style="display: none;">
       <div class="song-card" onclick="playMusic('musica/Alright.mp3', 'musica/alright.jpg', 'Alright', 'Kendrick Lamar ')">
@@ -149,17 +279,35 @@
         <div class="song-info">
           <h3 class="song-title">Alright</h3>
           <p class="artist-name">Kendrick Lamar</p>
+          <div class="rating" data-rating="3"></div>
         </div>
       </div> 
     </div>
   
+
+
+
+
+
+
     <div class="music-category" id="Rock" style="display: none;">
-      <div class="song-card" onclick="playMusic('song7.mp3', 'cover7.jpg', 'Song 7', 'Artist 7')">
-        <img src="cover7.jpg" alt="Cover 7">
-        <p>Song 7 - Artist 7</p>
-      </div>
+      <div class="song-card" onclick="playMusic('musica/MyLife.mp3', 'musica/Bon_.jpg', 'Bon Jovi', 'Its My Life')">
+        <div class="cover-container">
+          <img src="musica\Bon_.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">It's My Life</h3>
+          <p class="artist-name">Bon Jovi</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
     </div>
   
+
+
+
+
+
     <div class="music-category" id="Grunge" style="display: none;">
       <div class="song-card" onclick="playMusic('musica/Nirvana.mp3', 'musica/narriva.jpg', 'Smells Like Teen Spirit', 'Nirvana')">
         <div class="cover-container">
@@ -168,17 +316,73 @@
         <div class="song-info">
           <h3 class="song-title">Smells Like Teen Spirit</h3>
           <p class="artist-name">Nirvana</p>
+          <div class="rating" data-rating="5"></div>
         </div>
       </div> 
     </div>
   
-    <div class="music-category" id="Música-Colombiana" style="display: none;">
-      <div class="song-card" onclick="playMusic('song9.mp3', 'cover9.jpg', 'Song 9', 'Artist 9')">
-        <img src="cover9.jpg" alt="Cover 9">
-        <p>Song 9 - Artist 9</p>
-      </div>
+
+
+
+
+
+
+    <div class="music-category" id="Reggaeton" style="display: none;">
+      <div class="song-card" onclick="playMusic('musica/WHERE SHE GOES.mp3', 'musica/bad.jpg', 'WHERE SHE GOES', 'Bad Bunny')">
+        <div class="cover-container">
+          <img src="musica/bad.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">WHERE SHE GOES</h3>
+          <p class="artist-name">Bad Bunny</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/MONACO.mp3', 'musica/bad 2.jpg', 'MONACO', 'Bad Bunny')">
+        <div class="cover-container">
+          <img src="musica/bad 2.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">MONACO</h3>
+          <p class="artist-name">Bad Bunny</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/Vol57.mp3', 'musica/MILO.jpg', 'Bzrp Music Sessions', 'Milo J')">
+        <div class="cover-container">
+          <img src="musica/MILO.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Bzrp Music Sessions</h3>
+          <p class="artist-name">Milo J</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div> 
+
+      <div class="song-card" onclick="playMusic('musica/Sessions.mp3', 'musica/Sessions.jpg', 'BZRP Music Sessions #53', 'SHAKIRA')">
+        <div class="cover-container">
+          <img src="musica\Sessions.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">BZRP Music Sessions #53</h3>
+          <p class="artist-name">SHAKIRA</p>
+          <div class="rating" data-rating="5"></div>
+        </div>
+      </div> 
+
+
+
     </div>
-    
+   
+  
+
+
+
+
+
+
 <div class="music-category" id="musica-china" style="display: none;">
   <div class="song-card" onclick="playMusic('musica/daoxian.mp3', 'musica/daoxian.jpg', '稻香', '周杰伦')">
     <div class="cover-container">
@@ -187,10 +391,29 @@
     <div class="song-info">
       <h3 class="song-title">稻香</h3>
       <p class="artist-name">周杰伦</p>
+      <div class="rating" data-rating="4"></div>
     </div>
   </div>  
+
+  <div class="song-card" onclick="playMusic('musica/LIGHT YEARS AWAY.mp3', 'musica/Gem.jpg', '光年之外 LIGHT YEARS AWAY', 'G.E.M.')">
+    <div class="cover-container">
+      <img src="musica/Gem.jpg" alt="Cover 10" class="cover">
+    </div>
+    <div class="song-info">
+      <h3 class="song-title">光年之外 LIGHT YEARS AWAY</h3>
+      <p class="artist-name">鄧紫棋</p>
+      <div class="rating" data-rating="4"></div>
+    </div>
+  </div> 
+
 </div>
-            
+ 
+
+
+
+
+
+
     <div class="music-category" id="pop" style="display: none;">
       <div class="song-card" onclick="playMusic('musica/2002.mp3', 'musica/2002.jpg', '2002', 'Anne Marie')">
         <div class="cover-container">
@@ -199,7 +422,9 @@
         <div class="song-info">
           <h3 class="song-title">2002</h3>
           <p class="artist-name">Anne Marie</p>
+          <div class="rating" data-rating="4"></div>
         </div>
+
       </div>
       <div class="song-card" onclick="playMusic('musica/Something Just Like This.mp3', 'musica/somethink.jpg', 'Something Just Like This', 'The Chainsmokers')">
         <div class="cover-container">
@@ -208,8 +433,32 @@
         <div class="song-info">
           <h3 class="song-title">Something Just Like This</h3>
           <p class="artist-name">The Chainsmokers</p>
+          <div class="rating" data-rating="4"></div>
         </div>
       </div>  
+
+      <div class="song-card" onclick="playMusic('musica/StressedOut.mp3', 'musica/StressedOut.jpg', 'Stressed Out', 'The Chainsmokers')">
+        <div class="cover-container">
+          <img src="musica/StressedOut.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Stressed Out</h3>
+          <p class="artist-name">twenty one pilots</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div>  
+
+      <div class="song-card" onclick="playMusic('musica/Old Town Road.mp3', 'musica/OldTownRoad.jpg', 'Old Town Road', 'Lil Nas X')">
+        <div class="cover-container">
+          <img src="musica/OldTownRoad.jpg" alt="Cover 10" class="cover">
+        </div>
+        <div class="song-info">
+          <h3 class="song-title">Old Town Road</h3>
+          <p class="artist-name">Lil Nas X</p>
+          <div class="rating" data-rating="4"></div>
+        </div>
+      </div>
+
     </div>
   </main>
   
@@ -248,6 +497,16 @@
   </script>
   
 </body>
+<script>
+  // 获取 main 元素
+  var mainElement = document.querySelector('main');
+
+  
+
+  // 设置最大高度和启用滚动条
+  mainElement.style.maxHeight = '730px';
+  mainElement.style.overflowY = 'auto';
+</script>
 </html>
 
 

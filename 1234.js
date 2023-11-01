@@ -22,7 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
     new Song('musica/Creep.mp3', 'musica/creep.jpg', 'Creep', 'Radiohead'),
     new Song('musica/Nirvana.mp3', 'musica/narriva.jpg', 'Smells Like Teen Spirit', 'Nirvana'),
     new Song('musica/Alright.mp3', 'musica/alright.jpg', 'Alright', 'Kendrick Lamar'),
-    new Song('musica/daoxian.mp3', 'musica/daoxian.jpg', 'Canción 18'),
+    new Song('musica/Their Nightmares .mp3', 'musica/xxxtentation.png', 'Everybody Dies In Their Nightmares', 'XXXTENTACION'),
+    new Song('musica/Hope.mp3', 'musica/xxxtentation1.jpg', 'Hope', 'XXXTENTACION'),
+    new Song('musica/WHERE SHE GOES.mp3', 'musica/bad.jpg', 'WHERE SHE GOES', 'Bad Bunny'),
+    new Song('musica/Vol57.mp3', 'musica/MILO.jpg', 'Bzrp Music Sessions', 'Milo J'),
+    new Song('musica/MyLife.mp3', 'musica/Bon_.jpg', 'Bon Jovi', 'Its My Life'),
+    new Song('musica/MONACO.mp3', 'musica/bad 2.jpg', 'MONACO', 'Bad Bunny'),
+    new Song('musica/LIGHT YEARS AWAY.mp3', 'musica/Gem.jpg', '光年之外 LIGHT YEARS AWAY', 'G.E.M.'),
+    new Song('musica/StressedOut.mp3', 'musica/StressedOut.jpg', 'Stressed Out', 'The Chainsmokers'),
+
   ];
   
   let currentSongIndex = 0;
@@ -139,6 +147,9 @@ if (audioPlayer.readyState >= 2) {
     audioPlayer.play();
   }, { once: true });
 }
+
+
+
 
 
 
